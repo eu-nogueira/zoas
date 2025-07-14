@@ -1,0 +1,96 @@
+* {
+    text-align: center;
+    font-family: "Lora", serif;
+}
+body {
+     background-color: black;
+    color: white;
+}
+
+.formatura {
+    animation-name: formatura;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.formatura h1, .formatura img {
+    margin-top: 100px;
+}
+
+.formatura span {
+    color: rgb(255, 129, 129);
+}
+
+@keyframes formatura {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.formatura figcaption p, .nossoInicio p, .parabenizacao p {
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15pt;
+}
+
+.nossoInicio {
+    margin-top: 100px;
+}
+
+.nossoInicio img {
+    margin-top: 30px;
+}
+
+.zoeira h3 {
+    margin-top: 100px;
+}
+
+.parabenizacao img {
+    margin-top: 30px;
+}
+
+.final {
+    margin: 100px;
+}
+
+.momentos figure {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  p {
+    font-size: 14pt;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 12pt;
+    max-width: 100%;
+  }
+
+  h1, h3 {
+    font-size: 1.5rem;
+  }
+
+  .formatura img,
+  .nossoInicio img,
+  .parabenizacao img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .modal-body {
+    padding: 5px;
+  }
+
+  .modal-body img {
+   width: 100%;
+  } 
+}
